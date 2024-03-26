@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">대구로</string>
+    <string name="title_taxi">taxi</string>
+    <string name="title_bus">bus</string>
+</resources>

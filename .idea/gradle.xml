@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="jbr-17" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/demoBus" />
+            <option value="$PROJECT_DIR$/demoDelivery" />
+            <option value="$PROJECT_DIR$/demoTaxi" />
+            <option value="$PROJECT_DIR$/featureBus" />
+            <option value="$PROJECT_DIR$/featureDelivery" />
+            <option value="$PROJECT_DIR$/featureTaxi" />
+            <option value="$PROJECT_DIR$/network" />
+            <option value="$PROJECT_DIR$/ui" />
+            <option value="$PROJECT_DIR$/utill" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
