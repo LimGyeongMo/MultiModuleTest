@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.project.featurebus.BusMainActivity;
 import com.project.featuredelivery.deliveryMainActivity;
 import com.project.featuretaxi.taxiMainActivity;
-import com.project.ui.BaseActivity;
+import com.project.core.BaseActivity;
 
 public class MainActivityCategory extends BaseActivity {
 

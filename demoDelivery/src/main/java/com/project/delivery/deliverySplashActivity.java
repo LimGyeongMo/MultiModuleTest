@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 import com.project.delivery.databinding.DeliveryActivitySplashBinding;
 import com.project.featuredelivery.deliveryMainActivity;
-import com.project.ui.BaseActivity;
+import com.project.core.BaseActivity;
 
 public class deliverySplashActivity extends BaseActivity {
     public DeliveryActivitySplashBinding binding;

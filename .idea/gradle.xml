@@ -12,15 +12,14 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/demoBus" />
             <option value="$PROJECT_DIR$/demoDelivery" />
             <option value="$PROJECT_DIR$/demoTaxi" />
             <option value="$PROJECT_DIR$/featureBus" />
             <option value="$PROJECT_DIR$/featureDelivery" />
             <option value="$PROJECT_DIR$/featureTaxi" />
-            <option value="$PROJECT_DIR$/network" />
             <option value="$PROJECT_DIR$/ui" />
-            <option value="$PROJECT_DIR$/utill" />
           </set>
         </option>
       </GradleProjectSettings>

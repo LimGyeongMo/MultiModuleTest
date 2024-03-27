@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.project.ui.BaseActivity;
+import com.project.core.BaseActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;

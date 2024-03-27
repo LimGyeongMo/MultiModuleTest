@@ -34,6 +34,7 @@ android {
 
 dependencies {
     implementation project(":ui")
+    implementation project(":core")
     implementation project(":featureTaxi")
 
     implementation 'androidx.appcompat:appcompat:1.2.0'

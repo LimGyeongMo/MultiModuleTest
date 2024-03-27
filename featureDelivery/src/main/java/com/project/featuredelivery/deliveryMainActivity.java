@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 
 import com.project.featuredelivery.databinding.DeliveryActivityMainBinding;
-import com.project.ui.BaseActivity;
+import com.project.core.BaseActivity;
 
 public class deliveryMainActivity extends BaseActivity {
 

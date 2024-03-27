@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 import com.project.featurebus.databinding.BusActivityMainBinding;
-import com.project.ui.BaseActivity;
+import com.project.core.BaseActivity;
 
 public class BusMainActivity extends BaseActivity {
 

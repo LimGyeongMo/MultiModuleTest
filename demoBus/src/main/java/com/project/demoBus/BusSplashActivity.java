@@ -10,7 +10,7 @@ import com.project.demobus.R;
 
 import com.project.demobus.databinding.BusActivitySplashBinding;
 import com.project.featurebus.BusMainActivity;
-import com.project.ui.BaseActivity;
+import com.project.core.BaseActivity;
 
 public class BusSplashActivity extends BaseActivity {
 

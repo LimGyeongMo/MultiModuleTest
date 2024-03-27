@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.RelativeLayout;
 
 import com.project.featuretaxi.databinding.TaxiActivityMainBinding;
-import com.project.ui.BaseActivity;
+import com.project.core.BaseActivity;
 
 public class taxiMainActivity extends BaseActivity {
 
