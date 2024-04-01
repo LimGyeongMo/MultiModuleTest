@@ -39,5 +39,4 @@ public class taxiMainActivity extends BaseActivity {
         binding.rlCoupon.setOnClickListener(v -> showToast("쿠폰을 선택 하셧습니다"));
         binding.rlSafemessage.setOnClickListener(v -> showToast("안심메시지을 선택 하셧습니다"));
     }
-
 }

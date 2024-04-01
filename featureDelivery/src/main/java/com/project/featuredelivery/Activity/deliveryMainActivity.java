@@ -1,4 +1,4 @@
-package com.project.featuredelivery;
+package com.project.featuredelivery.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -6,8 +6,10 @@ import androidx.databinding.DataBindingUtil;
 import android.os.Bundle;
 
 
+import com.project.featuredelivery.R;
 import com.project.featuredelivery.databinding.DeliveryActivityMainBinding;
 import com.project.core.BaseActivity;
+import com.project.featuredelivery.fragment.AdBottomFragment;
 
 public class deliveryMainActivity extends BaseActivity {
 
@@ -31,7 +33,20 @@ public class deliveryMainActivity extends BaseActivity {
     private void initLayout() {
         binding.titleView.getIconLeft1().setOnClickListener(v -> onBackPressed());
 
-        binding.rlSingle.setOnClickListener(v -> showToast("1인분을 선택 하셧습니다"));
+        binding.rlSingle.setOnClickListener(v -> {
+            AdBottomFragment bottomFragment = new AdBottomFragment(new AdBottomFragment.CallBackListener() {
+                @Override
+                public void cancel() {
+
+                }
+
+                @Override
+                public void ok() {
+
+                }
+            });
+            bottomFragment.show(getSupportFragmentManager(), null);
+        });
         binding.rlChiken.setOnClickListener(v -> showToast("치킨을 선택 하셧습니다"));
         binding.rlKorea.setOnClickListener(v -> showToast("한식을 선택 하셧습니다"));
         binding.rlChina.setOnClickListener(v -> showToast("중식을 선택 하셧습니다"));

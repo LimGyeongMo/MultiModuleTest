@@ -1,14 +1,11 @@
 package com.project.daeguromultimodule;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import com.project.featurebus.BusMainActivity;
-import com.project.featuredelivery.deliveryMainActivity;
+import com.project.featuredelivery.Activity.deliveryMainActivity;
 import com.project.featuretaxi.taxiMainActivity;
 import com.project.core.BaseActivity;
 

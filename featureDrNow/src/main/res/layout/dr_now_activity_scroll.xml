@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.project.ui.CommonTitleView
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bottom_line_visibility="gone"
+            app:icon_right1="@drawable/common_search_20"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_below="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_fix_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/bg_round_area_6"
+                        android:backgroundTint="@color/color_FF7403">
+
+
+                        <TextView
+                            android:id="@+id/tv_go_book"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font_pretendard_bold"
+                            android:gravity="center"
+                            android:letterSpacing="-0.01"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:text="비대면 진료 받으로 가기" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/bg_round_area_6"
+                    android:backgroundTint="@color/color_F2F2F2">
+
+                    <ImageView
+                        android:id="@+id/ig_cursor_left"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/common_cursor_left_16"
+                        app:ColorMatrixColorFilter="@color/color_333333_30"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toRightOf="@id/ig_cursor_left"
+                        android:fontFamily="@font/font_pretendard_bold"
+                        android:gravity="center"
+                        android:letterSpacing="-0.01"
+                        android:textColor="@color/color_333333_30"
+                        android:textSize="16dp"
+                        android:text="이전 글"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/font_pretendard_medium"
+                    android:letterSpacing="-0.01"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14dp"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/font_pretendard_medium"
+                    android:letterSpacing="-0.01"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14dp"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/font_pretendard_medium"
+                    android:letterSpacing="-0.01"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14dp"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/font_pretendard_medium"
+                    android:letterSpacing="-0.01"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14dp"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/font_pretendard_medium"
+                    android:letterSpacing="-0.01"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14dp"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/font_pretendard_medium"
+                    android:letterSpacing="-0.01"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14dp"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/font_pretendard_medium"
+                    android:letterSpacing="-0.01"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="14dp"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_move_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/bg_round_area_6"
+                android:backgroundTint="@color/color_FF7403">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_pretendard_bold"
+                    android:gravity="center"
+                    android:letterSpacing="-0.01"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="비대면 진료 받으로 가기" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

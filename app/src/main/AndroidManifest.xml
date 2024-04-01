@@ -30,7 +30,7 @@
         </activity>
 
         <activity
-            android:name="com.project.featuredelivery.deliveryMainActivity"
+            android:name="com.project.featuredelivery.Activity.deliveryMainActivity"
             android:exported="true"
             android:screenOrientation="portrait"/>
 

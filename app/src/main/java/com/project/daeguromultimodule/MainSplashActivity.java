@@ -20,9 +20,12 @@ public class MainSplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_splash);
-        initialize();
+
     }
-    private void initialize() {
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         if (timer != null) {
             timer.cancel();
             timer = null;
@@ -30,8 +33,14 @@ public class MainSplashActivity extends BaseActivity {
 
         timer = new Timer();
         timer.schedule(new DelayStartTask(), 2000);
-
     }
+
+    @Override
+    public void onBackPressed() {
+        timer.cancel();
+        super.onBackPressed();
+    }
+
 
     private void realStartMainActivity() {
         Intent sendIntent = new Intent(MainSplashActivity.this, MainActivityCategory.class);
