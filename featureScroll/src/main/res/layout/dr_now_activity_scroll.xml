@@ -12,13 +12,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:bottom_line_visibility="gone"
-            app:icon_right1="@drawable/common_search_20"/>
+            app:icon_right1="@drawable/common_search_20" />
 
         <androidx.core.widget.NestedScrollView
             android:id="@+id/nestedScrollView"
-            android:layout_below="@+id/title_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/title_view"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
             <LinearLayout
@@ -29,7 +29,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content" />
 
                 <RelativeLayout
                     android:id="@+id/rl_fix_button"
@@ -41,12 +41,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
+                        android:background="@drawable/bg_round_area_6"
+                        android:backgroundTint="@color/color_FF7403"
                         android:focusable="true"
                         android:focusableInTouchMode="true"
-                        android:background="@drawable/bg_round_area_6"
-                        android:backgroundTint="@color/color_FF7403">
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
 
 
                         <TextView
@@ -56,9 +56,9 @@
                             android:fontFamily="@font/font_pretendard_bold"
                             android:gravity="center"
                             android:letterSpacing="-0.01"
+                            android:text="비대면 진료 받으로 가기"
                             android:textColor="@color/white"
-                            android:textSize="20dp"
-                            android:text="비대면 진료 받으로 가기" />
+                            android:textSize="20dp" />
                     </RelativeLayout>
                 </RelativeLayout>
 
@@ -66,17 +66,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:padding="10dp"
                     android:background="@drawable/bg_round_area_6"
-                    android:backgroundTint="@color/color_F2F2F2">
+                    android:backgroundTint="@color/color_F2F2F2"
+                    android:padding="10dp">
 
                     <ImageView
                         android:id="@+id/ig_cursor_left"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/common_cursor_left_16"
-                        app:ColorMatrixColorFilter="@color/color_333333_30"/>
+                        android:src="@drawable/common_cursor_left_16" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -86,122 +85,148 @@
                         android:fontFamily="@font/font_pretendard_bold"
                         android:gravity="center"
                         android:letterSpacing="-0.01"
+                        android:text="이전 글"
                         android:textColor="@color/color_333333_30"
-                        android:textSize="16dp"
-                        android:text="이전 글"/>
+                        android:textSize="16dp" />
                 </RelativeLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
                     android:ellipsize="marquee"
                     android:fontFamily="@font/font_pretendard_medium"
                     android:letterSpacing="-0.01"
-                    android:layout_centerVertical="true"
                     android:singleLine="true"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~"
                     android:textColor="@color/color_333333"
-                    android:textSize="14dp"
-                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+                    android:textSize="14dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
                     android:ellipsize="marquee"
                     android:fontFamily="@font/font_pretendard_medium"
                     android:letterSpacing="-0.01"
-                    android:layout_centerVertical="true"
                     android:singleLine="true"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~"
                     android:textColor="@color/color_333333"
-                    android:textSize="14dp"
-                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+                    android:textSize="14dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
                     android:ellipsize="marquee"
                     android:fontFamily="@font/font_pretendard_medium"
                     android:letterSpacing="-0.01"
-                    android:layout_centerVertical="true"
                     android:singleLine="true"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~"
                     android:textColor="@color/color_333333"
-                    android:textSize="14dp"
-                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+                    android:textSize="14dp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
                     android:ellipsize="marquee"
                     android:fontFamily="@font/font_pretendard_medium"
                     android:letterSpacing="-0.01"
-                    android:layout_centerVertical="true"
                     android:singleLine="true"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~"
                     android:textColor="@color/color_333333"
-                    android:textSize="14dp"
-                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+                    android:textSize="14dp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
                     android:ellipsize="marquee"
                     android:fontFamily="@font/font_pretendard_medium"
                     android:letterSpacing="-0.01"
-                    android:layout_centerVertical="true"
                     android:singleLine="true"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~"
                     android:textColor="@color/color_333333"
-                    android:textSize="14dp"
-                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+                    android:textSize="14dp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
                     android:ellipsize="marquee"
                     android:fontFamily="@font/font_pretendard_medium"
                     android:letterSpacing="-0.01"
-                    android:layout_centerVertical="true"
                     android:singleLine="true"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~"
                     android:textColor="@color/color_333333"
-                    android:textSize="14dp"
-                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+                    android:textSize="14dp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
                     android:ellipsize="marquee"
                     android:fontFamily="@font/font_pretendard_medium"
                     android:letterSpacing="-0.01"
-                    android:layout_centerVertical="true"
                     android:singleLine="true"
+                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~"
                     android:textColor="@color/color_333333"
-                    android:textSize="14dp"
-                    android:text="사랑하기 좋은 날, 사랑하는 사람 ~사랑하는 사람 ~사랑하는 사람 ~~" />
+                    android:textSize="14dp" />
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
+
 
         <RelativeLayout
             android:id="@+id/rl_move_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@color/white">
+            android:layout_alignParentBottom="true">
 
             <RelativeLayout
+                android:id="@+id/gradient"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/linear_gradient">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/move_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
+                android:layout_below="@id/gradient"
+                android:background="@color/white"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
-                android:background="@drawable/bg_round_area_6"
-                android:backgroundTint="@color/color_FF7403">
+                android:padding="10dp">
 
-                <TextView
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/font_pretendard_bold"
-                    android:gravity="center"
-                    android:letterSpacing="-0.01"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:text="비대면 진료 받으로 가기" />
+                    android:background="@drawable/bg_round_area_6"
+                    android:backgroundTint="@color/color_FF7403"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/font_pretendard_bold"
+                        android:gravity="center"
+                        android:letterSpacing="-0.01"
+                        android:text="비대면 진료 받으로 가기"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+                </RelativeLayout>
             </RelativeLayout>
         </RelativeLayout>
 

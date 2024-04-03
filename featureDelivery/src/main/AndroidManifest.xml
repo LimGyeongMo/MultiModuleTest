@@ -3,4 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.project.featuredelivery">
 
+    <application>
+    <activity
+            android:name="com.project.featurescroll.DrNowScrollActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
 </manifest>

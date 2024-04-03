@@ -1,20 +1,19 @@
-package com.project.featuredrnow;
+package com.project.featurescroll;
 
+import android.content.res.ColorStateList;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.annotation.NonNull;
 import androidx.core.widget.NestedScrollView;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.project.core.BaseActivity;
-import com.project.featuredrnow.databinding.DrNowActivityScrollBinding;
+import com.project.featurescroll.databinding.DrNowActivityScrollBinding;
+
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class DrNowScrollActivity extends BaseActivity {
 
@@ -24,12 +23,13 @@ public class DrNowScrollActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.dr_now_activity_scroll);
-        
+
         initLayout();
         initData();
     }
 
     private void initLayout() {
+        binding.igCursorLeft.setImageTintList(ColorStateList.valueOf(getColor(com.project.ui.R.color.color_333333_30)));
         adapter = new DrNowAdapter(this);
         adapter.setOnItemClickListener((View, Position) -> {
         });
