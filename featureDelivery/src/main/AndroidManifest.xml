@@ -4,11 +4,19 @@
     package="com.project.featuredelivery">
 
     <application>
-    <activity
+        <activity
+            android:name=".Activity.bottomSheetActivity"
+            android:exported="false" />
+        <activity
             android:name="com.project.featurescroll.DrNowScrollActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"></activity>
 
-        </activity>
+        <activity
+            android:name="com.project.featuresearchactivity.CommonSearchActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
     </application>
+
+
 </manifest>

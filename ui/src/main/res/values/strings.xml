@@ -1484,7 +1484,8 @@
     <string name="bus_alarm_no_ride">해당 버스 노선 운행이 종료되어\n승하차 알림배너 설정이 불가능 합니다.</string>
     <string name="bus_alarm_last_station">종점에서는 하차알람을 설정할 수 없습니다.</string>
     <string name="bus_alarm_select_station">알람을 설정하실 정류장을 선택해주세요.</string>
-    <string name="bus_alarm_reset">이미 설정되어 있는 알람이 있습니다.\n재설정하시겠습니까?</string>  기존 알람을 중지하고,
+    <string name="bus_alarm_reset">이미 설정되어 있는 알람이 있습니다.\n재설정하시겠습니까?</string>
+    기존 알람을 중지하고,
     <string name="bus_alarm_delete">알람을 종료하시겠습니까?</string>
     <string name="bus_ride_off_alarm_finish">하차정류장에 도착하여 알림이 종료되었습니다.</string>
     <string name="bus_no_ride_off">종료된 하차 알람 입니다.</string>
@@ -1496,7 +1497,6 @@
     <string name="bus_home_alarm_ride_off_explanation2"> • 보다 나은 서비스를 <b><u>위해 승차버스 선택이 필요합니다.</u></b></string>
     <string name="bus_home_alarm_ride_off_explanation3"> • <b><u>승차정류장 이후 노선만 하차알람 설정</u></b>이 가능합니다.</string>
     <string name="bus_home_alarm_ride_on_bus_explanation"> <u>해당버스가 지나온 정류장</u></string>
-
 
 
     <!-- 비즈  -->
