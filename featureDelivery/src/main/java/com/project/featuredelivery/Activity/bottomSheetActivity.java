@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.util.Log;
 import androidx.core.util.Pair;
 import android.view.View;
-import android.widget.RelativeLayout;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.project.core.BaseActivity;
@@ -24,7 +23,6 @@ public class bottomSheetActivity extends BaseActivity {
     private DeliveryActivityBottomSheetBinding binding;
     private BottomSheetAdapter adapter;
     private BottomSheetBehavior behavior;
-
     private int savedState;
 
     @Override
@@ -39,6 +37,7 @@ public class bottomSheetActivity extends BaseActivity {
     @Override
     public void onBackPressed() {
         if (savedState != BottomSheetBehavior.STATE_COLLAPSED) {
+            savedState = BottomSheetBehavior.STATE_COLLAPSED;
             behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
         } else {
             super.onBackPressed();
@@ -46,6 +45,8 @@ public class bottomSheetActivity extends BaseActivity {
     }
 
     private void initLayout() {
+        // 처음 bottomSheet이 닫혀 있는 상태인지 저장
+        savedState = BottomSheetBehavior.STATE_COLLAPSED;
         editSearchView();
         rvTestBottomView();
         bottomSheet();
@@ -63,21 +64,20 @@ public class bottomSheetActivity extends BaseActivity {
     private void bottomSheet() {
         behavior = BottomSheetBehavior.from(binding.bottomSheet);
         behavior.setDraggable(true);
-
         behavior.addBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
                 savedState = newState;
                 if (newState == BottomSheetBehavior.STATE_EXPANDED) {
-                    Log.d("bottom : ", "STATE_EXPANDED");
+                    Log.d("bottom : ", "STATE_EXPANDED"); //펼쳐진 상태
                 } else if (newState == BottomSheetBehavior.STATE_COLLAPSED) {
-                    Log.d("bottom : ", "onStateChanged: STATE_COLLAPSED");
+                    Log.d("bottom : ", "onStateChanged: STATE_COLLAPSED"); // 접혀있는 상태
                 } else if (newState == BottomSheetBehavior.STATE_HIDDEN) {
-                    Log.d("bottom : ", "onStateChanged: STATE_HIDDEN");
+                    Log.d("bottom : ", "onStateChanged: STATE_HIDDEN"); // 아래로 숨겨진 상태 (보이지 않음)
                 } else if (newState == BottomSheetBehavior.STATE_DRAGGING) {
-                    Log.d("bottom : ", "onStateChanged: STATE_DRAGGING");
+                    Log.d("bottom : ", "onStateChanged: STATE_DRAGGING"); // 드래깅되고 있는 상태
                 } else if (newState == BottomSheetBehavior.STATE_SETTLING) {
-                    Log.d("bottom : ", "onStateChanged: STATE_SETTLING");
+                    Log.d("bottom : ", "onStateChanged: STATE_SETTLING"); // 드래그/스와이프 직후 고정된 상태
                 }
             }
 

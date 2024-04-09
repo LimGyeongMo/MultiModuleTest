@@ -26,5 +26,13 @@
             android:exported="true"
             android:screenOrientation="portrait"/>
 
+        <activity android:name="com.project.ui.NaverMapActivity"
+        android:exported="true"
+        android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="8ei9mcejww" /> <!-- 네이버 지도 -->
+
     </application>
 </manifest>

@@ -11,8 +11,13 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter()
+
+        // 네이버 api
+        maven { url 'https://naver.jfrog.io/artifactory/maven/' }
     }
+
 }
+
 rootProject.name = "daeguroMultiModule"
 include ':app'
 include ':demoDelivery'

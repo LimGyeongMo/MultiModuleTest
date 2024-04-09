@@ -16,6 +16,7 @@ import com.project.core.BaseActivity;
 import com.project.featuredelivery.fragment.AdBottomFragment;
 import com.project.featurescroll.DrNowScrollActivity;
 import com.project.featuresearchactivity.CommonSearchActivity;
+import com.project.ui.NaverMapActivity;
 
 public class deliveryMainActivity extends BaseActivity {
 
@@ -55,8 +56,7 @@ public class deliveryMainActivity extends BaseActivity {
         });
         binding.rlChiken.setOnClickListener(v -> startActivity(new Intent(this, DrNowScrollActivity.class)));
         binding.rlKorea.setOnClickListener(v -> startActivity(new Intent(this, bottomSheetActivity.class)));
-
-        binding.rlChina.setOnClickListener(v -> showToast("중식을 선택 하셧습니다"));
+        binding.rlChina.setOnClickListener(v -> startActivity(new Intent(this, NaverMapActivity.class)));
         binding.rlJapan.setOnClickListener(v -> showToast("일식을 선택 하셧습니다"));
         binding.rlSchool.setOnClickListener(v -> showToast("분식을 선택 하셧습니다"));
         binding.rlPigHocks.setOnClickListener(v -> showToast("족발보쌈을 선택 하셧습니다"));
