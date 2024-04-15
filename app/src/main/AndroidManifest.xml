@@ -34,7 +34,7 @@
             android:exported="true"
             android:screenOrientation="portrait"/>
 
-        <activity android:name="com.project.featuretaxi.taxiMainActivity"
+        <activity android:name="com.project.featuretaxi.view.taxiMainActivity"
             android:exported="true"
             android:screenOrientation="portrait"/>
 

@@ -1,12 +1,11 @@
 package com.project.taxi;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.project.featuretaxi.taxiMainActivity;
+import com.project.featuretaxi.view.taxiMainActivity;
 import com.project.taxi.databinding.TaxiActivitySplashBinding;
 import com.project.core.BaseActivity;
 

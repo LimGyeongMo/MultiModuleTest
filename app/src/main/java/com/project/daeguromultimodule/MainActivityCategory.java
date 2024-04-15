@@ -6,7 +6,7 @@ import android.widget.RelativeLayout;
 
 import com.project.featurebus.BusMainActivity;
 import com.project.featuredelivery.Activity.deliveryMainActivity;
-import com.project.featuretaxi.taxiMainActivity;
+import com.project.featuretaxi.view.taxiMainActivity;
 import com.project.core.BaseActivity;
 
 public class MainActivityCategory extends BaseActivity {

@@ -1,11 +1,13 @@
-package com.project.featuretaxi;
+package com.project.featuretaxi.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RelativeLayout;
 
+import com.project.featuretaxi.R;
 import com.project.featuretaxi.databinding.TaxiActivityMainBinding;
 import com.project.core.BaseActivity;
 
@@ -31,7 +33,7 @@ public class taxiMainActivity extends BaseActivity {
         binding.titleView.getIconLeft1().setOnClickListener(v -> onBackPressed());
 
         binding.rlCall.setOnClickListener(v -> showToast("호출을 선택 하셧습니다"));
-        binding.rlCard.setOnClickListener(v -> showToast("카드을 선택 하셧습니다"));
+        binding.rlCard.setOnClickListener(v -> startActivity(new Intent(this, TaxiMvvmActivity.class)));
         binding.rlHitory.setOnClickListener(v -> showToast("이용내역을 선택 하셧습니다"));
         binding.rlMyInfo.setOnClickListener(v -> showToast("마이페이즈을 선택 하셧습니다"));
         binding.rlNotice.setOnClickListener(v -> showToast("알림을 선택 하셧습니다"));
