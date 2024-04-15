@@ -32,6 +32,8 @@ public class DrNowScrollActivity extends BaseActivity {
         binding.igCursorLeft.setImageTintList(ColorStateList.valueOf(getColor(com.project.ui.R.color.color_333333_30)));
         adapter = new DrNowAdapter(this);
         adapter.setOnItemClickListener((View, Position) -> {
+
+
         });
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         binding.recyclerView.setAdapter(adapter);

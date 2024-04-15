@@ -27,8 +27,8 @@
             android:screenOrientation="portrait"/>
 
         <activity android:name="com.project.ui.NaverMapActivity"
-        android:exported="true"
-        android:screenOrientation="portrait"/>
+            android:exported="true"
+            android:screenOrientation="portrait"/>
 
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
