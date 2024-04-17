@@ -1,11 +1,8 @@
 package com.project.featuretaxi.view;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 
 import com.project.core.BaseActivity;
 import com.project.featuretaxi.R;
@@ -19,7 +16,6 @@ public class TaxiMvvmActivity extends BaseActivity {
     public TaxiActivityMvvmBinding binding;
     public ViewModel viewModel;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,18 +28,13 @@ public class TaxiMvvmActivity extends BaseActivity {
         bindState();
     }
 
-    void bindAction() {
+    private void bindAction() {
         binding.okBtnview.setOnClickListener(view -> {
-            try {
                 viewModel.getUser();
-                Log.d("okBtnview ok", binding.okBtnview.toString());
-            } catch ( Exception e){
-                Log.d("okBtnview fail", e.toString());
-            }
         });
     }
 
-    void bindState() {
+    private void bindState() {
         viewModel.winnerObservable
                 .bind(value -> binding.userTextview.setText(value.toString()));
     }

@@ -126,7 +126,7 @@
                             android:layout_centerHorizontal="true"
                             android:gravity="center"
                             android:letterSpacing="-0.01"
-                            android:text="카드"
+                            android:text="mvvm"
                             android:textColor="@color/color_333333"
                             android:textSize="14dp" />
                     </RelativeLayout>
@@ -165,7 +165,7 @@
                             android:layout_centerHorizontal="true"
                             android:gravity="center"
                             android:letterSpacing="-0.01"
-                            android:text="이용내역"
+                            android:text="코틀린"
                             android:textColor="@color/color_333333"
                             android:textSize="14dp" />
                     </RelativeLayout>

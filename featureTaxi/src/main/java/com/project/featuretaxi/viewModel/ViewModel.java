@@ -6,9 +6,23 @@ import androidx.databinding.BaseObservable;
 
 import com.project.featuretaxi.model.Database;
 
-public class ViewModel extends BaseObservable {
 
-    private final Database database;
+//class LocalDBRepository {
+//    private final Database database; // Local DB
+//}
+//
+//class ProductRepository {
+//    private final Database database; // Local DB
+//    private final NetworkPresenter presenter; // API
+//}
+//
+//class UseCase {
+//    ProductRepository productRepository;
+//}
+
+public class ViewModel extends BaseObservable {
+    private final Database database; // Local DB
+//    private final NetworkPresenter presenter; // API
     private String winner;
     public Observable<String> winnerObservable = new Observable<>("");
 
