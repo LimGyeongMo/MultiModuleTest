@@ -201,4 +201,15 @@
     <color name="color_145b97">#145b97</color>
     <color name="color_083F6E">#083F6E</color>
     <color name="color_0D4D82">#0D4D82</color>
+    <color name="color_F2FBE3">#fefbe3</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="playerBackground">#fefbe3</color>
+    <color name="mainBackground">#112e40</color>
+    <color name="textDefault">#4e4c62</color>
+    <color name="textOrange">#ff7775</color>
+    <color name="buttonBackground">#4e4c62</color>
+    <color name="nav_background">#0097A7</color>
+    <color name="nav_selected">#0083ff</color>
 </resources>

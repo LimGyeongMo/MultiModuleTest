@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RelativeLayout;
 
+import com.project.featuredarggable.MainActivity;
 import com.project.featurekotlin.view.KotlinMainActivity;
 import com.project.featuretaxi.R;
 import com.project.featuretaxi.databinding.TaxiActivityMainBinding;
@@ -36,7 +37,7 @@ public class taxiMainActivity extends BaseActivity {
         binding.rlCall.setOnClickListener(v -> showToast("호출을 선택 하셧습니다"));
         binding.rlCard.setOnClickListener(v -> startActivity(new Intent(this, TaxiMvvmActivity.class)));
         binding.rlHitory.setOnClickListener(v -> startActivity(new Intent(this, KotlinMainActivity.class)));
-        binding.rlMyInfo.setOnClickListener(v -> showToast("마이페이즈을 선택 하셧습니다"));
+        binding.rlMyInfo.setOnClickListener(v -> startActivity(new Intent(this, MainActivity.class)));
         binding.rlNotice.setOnClickListener(v -> showToast("알림을 선택 하셧습니다"));
         binding.rlMileage.setOnClickListener(v -> showToast("마일리지을 선택 하셧습니다"));
         binding.rlCoupon.setOnClickListener(v -> showToast("쿠폰을 선택 하셧습니다"));

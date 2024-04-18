@@ -1497,6 +1497,7 @@
     <string name="bus_home_alarm_ride_off_explanation2"> • 보다 나은 서비스를 <b><u>위해 승차버스 선택이 필요합니다.</u></b></string>
     <string name="bus_home_alarm_ride_off_explanation3"> • <b><u>승차정류장 이후 노선만 하차알람 설정</u></b>이 가능합니다.</string>
     <string name="bus_home_alarm_ride_on_bus_explanation"> <u>해당버스가 지나온 정류장</u></string>
+    <string name="drag_test">Your\nMusic</string>
 
 
     <!-- 비즈  -->
