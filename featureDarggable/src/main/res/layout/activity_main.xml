@@ -12,7 +12,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:textSize="100sp"
-      android:text="@string/drag_test"
+      android:text="테스트 테스트 테스트"
       android:textColor="@color/white"
       android:textStyle="bold"
       android:layout_marginTop="100dp"

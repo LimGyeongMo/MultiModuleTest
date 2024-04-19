@@ -2,6 +2,7 @@ package com.project.daeguromultimodule;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.Intent;
 
 public class MyApplication extends Application {
 
@@ -12,6 +13,10 @@ public class MyApplication extends Application {
         super.onCreate();
 
     }
+    public void resetApp (Context context) {
+        new Intent(context, MainSplashActivity.class);
+    }
+
     public interface ServiceStarter {
         void startServiceActivity(Context context);
     }

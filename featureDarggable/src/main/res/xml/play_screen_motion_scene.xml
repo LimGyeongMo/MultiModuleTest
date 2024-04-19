@@ -104,6 +104,42 @@
             app:customFloatValue="0.0" />
       </KeyAttribute>
     </KeyFrameSet>
+
+    <KeyFrameSet>
+      <KeyAttribute
+          app:framePosition="100"
+          app:motionTarget="@id/prev_image_view">
+        <CustomAttribute
+            app:attributeName="alpha"
+            app:customFloatValue="1.0" />
+      </KeyAttribute>
+
+      <KeyAttribute
+          app:framePosition="99"
+          app:motionTarget="@id/prev_image_view">
+        <CustomAttribute
+            app:attributeName="alpha"
+            app:customFloatValue="0.0" />
+      </KeyAttribute>
+    </KeyFrameSet>
+
+    <KeyFrameSet>
+      <KeyAttribute
+          app:framePosition="100"
+          app:motionTarget="@id/next_image_view">
+        <CustomAttribute
+            app:attributeName="alpha"
+            app:customFloatValue="1.0" />
+      </KeyAttribute>
+
+      <KeyAttribute
+          app:framePosition="99"
+          app:motionTarget="@id/next_image_view">
+        <CustomAttribute
+            app:attributeName="alpha"
+            app:customFloatValue="0.0" />
+      </KeyAttribute>
+    </KeyFrameSet>
   </Transition>
 
 

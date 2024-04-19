@@ -71,4 +71,5 @@ public class BaseActivity extends AppCompatActivity {
             inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
+
 }
