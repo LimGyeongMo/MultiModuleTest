@@ -22,7 +22,14 @@ public class taxiMainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.taxi_activity_main);
 
+        initialize();
         initLayout();
+    }
+
+    private void initialize() {
+        if (getIntent().hasExtra("deepLink")) {
+            binding.rlMyInfo.performClick();
+        }
     }
 
     @Override

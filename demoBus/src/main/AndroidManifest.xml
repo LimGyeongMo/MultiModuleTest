@@ -21,5 +21,11 @@
         <activity android:name="com.project.featurebus.BusMainActivity"
             android:exported="true"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.project.featurebus.BusMovingButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.featurebus.BusChatActivity"
+            android:exported="false" />
     </application>
 </manifest>

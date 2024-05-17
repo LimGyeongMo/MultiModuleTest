@@ -28,6 +28,11 @@ public class MainActivityCategory extends BaseActivity {
         taxiBtn = findViewById(R.id.rl_taxi);
         busBtn = findViewById(R.id.rl_bus);
 
+        if (getIntent().hasExtra("deepLink")) {
+            Intent sendIntent = new Intent(this, taxiMainActivity.class);
+            sendIntent.putExtra("deepLink", getIntent().getStringExtra("deepLink"));
+            startActivity(sendIntent);
+        }
     }
 
     private void initLayout() {

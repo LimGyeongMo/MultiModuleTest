@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.util.Log;
 
 import com.project.core.BaseActivity;
 
@@ -20,6 +21,13 @@ public class MainSplashActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_splash);
+
+        if (getIntent().hasExtra("deepLink")) {
+            String deepLink = getIntent().getStringExtra("deepLink");
+            Log.d("MainSplashActivity", "Received deepLink: " + deepLink);
+        } else {
+            Log.d("MainSplashActivity", "No deepLink received");
+        }
 
     }
 
@@ -44,7 +52,9 @@ public class MainSplashActivity extends BaseActivity {
 
     private void realStartMainActivity() {
         Intent sendIntent = new Intent(MainSplashActivity.this, MainActivityCategory.class);
-        sendIntent.putExtra("intent", getIntent());
+        if (getIntent().hasExtra("deepLink")) {
+            sendIntent.putExtra("deepLink", getIntent().getStringExtra("deepLink"));
+        }
         sendIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(sendIntent);
         finish();

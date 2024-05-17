@@ -45,6 +45,12 @@
         <activity android:name="com.project.ui.NaverMapActivity"
             android:exported="true"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.project.featurebus.BusMovingButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.project.featurebus.BusChatActivity"
+            android:exported="false" />
 
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"

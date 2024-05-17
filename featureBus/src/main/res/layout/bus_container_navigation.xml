@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:id="@+id/lo_form"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent="80%"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/white"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="채팅 테스트"
+            android:textSize="20dp"
+            android:textColor="@color/color_333333"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_chatting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_title"
+            android:layout_above="@+id/et_keyword"/>
+
+        <EditText
+            android:id="@+id/et_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="입력해주세요"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_333333"
+            android:layout_alignParentBottom="true"/>
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+</layout>

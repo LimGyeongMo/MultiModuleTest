@@ -25,6 +25,7 @@
             <option value="$PROJECT_DIR$/featureSearchActivity" />
             <option value="$PROJECT_DIR$/featureTaxi" />
             <option value="$PROJECT_DIR$/ui" />
+            <option value="$PROJECT_DIR$/widget" />
           </set>
         </option>
       </GradleProjectSettings>

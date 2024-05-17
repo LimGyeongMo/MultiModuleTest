@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="임경모"
+            android:textSize="13dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/color_333333"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_chat_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/bg_round_area_6"
+            android:backgroundTint="@color/color_B301CAFF">
+
+            <TextView
+                android:id="@+id/tv_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="300dp"
+                tools:text="ddddddddddddddddddddddddddddddddddddddddddddddd"/>
+        </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_alignBottom="@id/rl_chat_bubble"
+                android:layout_toEndOf="@id/rl_chat_bubble"
+                android:text="0000.00.00"
+                android:textColor="@color/color_333333_20"
+                android:textSize="10dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

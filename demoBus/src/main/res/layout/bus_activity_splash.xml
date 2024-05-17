@@ -35,5 +35,26 @@
                 android:layout_height="1dp"
                 android:background="@color/color_F2F2F2"/>
         </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lo_go_bus_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_pretendard_bold"
+                android:letterSpacing="-0.01"
+                android:layout_margin="12dp"
+                android:text="무빙 버튼 테스트 "
+                android:textColor="@color/color_514646"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_F2F2F2"/>
+        </LinearLayout>
     </LinearLayout>
 </layout>

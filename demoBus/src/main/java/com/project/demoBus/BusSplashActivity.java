@@ -8,9 +8,11 @@ import androidx.databinding.DataBindingUtil;
 
 import com.project.demobus.R;
 
+
 import com.project.demobus.databinding.BusActivitySplashBinding;
 import com.project.featurebus.BusMainActivity;
 import com.project.core.BaseActivity;
+import com.project.featurebus.BusMovingButtonActivity;
 
 public class BusSplashActivity extends BaseActivity {
 
@@ -26,5 +28,6 @@ public class BusSplashActivity extends BaseActivity {
 
     private void initLayout() {
         binding.loGoBus.setOnClickListener(view -> startActivity(new Intent(this, BusMainActivity.class)));
+        binding.loGoBusTest.setOnClickListener(view -> startActivity(new Intent(this, BusMovingButtonActivity.class)));
     }
 }
